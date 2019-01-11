@@ -1,10 +1,13 @@
-package main;
+package main.Service;
 
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+
+import main.Entity.Car;
+import main.Entity.CarPark;
 
 public class ParkService {
     CarPark carPark = new CarPark();

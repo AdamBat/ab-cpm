@@ -1,15 +1,15 @@
 package main;
 
-import java.util.Map;
+import java.util.Scanner;
+
+import main.Service.ParkService;
 
 public class App {
     public static void main(String[] args) {
         ParkService parkService = new ParkService();
-
-        Car car = new Car("ABC");
-        Car car1 = new Car("XYZ");
-        parkService.park(car);
-        parkService.park(car1);
-        parkService.unpark(5000);
+        System.out.println("Please provide car park instructions separated by coma");
+        Scanner sc = new Scanner(System.in);
+        String instr = sc.nextLine();
+        parkService.processInstructions(instr);
     }
 }
